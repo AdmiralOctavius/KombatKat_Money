@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4560383086772816}
   - component: {fileID: 212674425791750304}
   - component: {fileID: 114083657454220110}
+  - component: {fileID: 114504687425993660}
   m_Layer: 0
   m_Name: Cannon
   m_TagString: Untagged
@@ -35,8 +36,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1918035997798646}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.61, y: -3.21, z: 0.1015625}
-  m_LocalScale: {x: 8.6356, y: 6.656, z: 1}
+  m_LocalPosition: {x: 0, y: 0.77, z: 0}
+  m_LocalScale: {x: 9, y: 3, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -56,8 +57,27 @@ MonoBehaviour:
   projectile: {fileID: 1634363688677162, guid: 18496f3534855aa4ab54bed573bc555b, type: 2}
   isOn: 1
   fireRate: 2
+  target1: {x: 0, y: 0, z: 0}
+  target2: {x: 0, y: 0, z: 0}
   send: 0
-  speed: 1
+  speed: 0.05
+  rotateSpeed: 1
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  objectToUse: {fileID: 4560383086772816}
+  reverseMove: 0
+--- !u!114 &114504687425993660
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1918035997798646}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 394de0a4a201ac548b4f7ca0ff1d8089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointB: {x: 5, y: 5, z: 0}
 --- !u!212 &212674425791750304
 SpriteRenderer:
   m_ObjectHideFlags: 1
